@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-green-500 h-screen flex justify-center items-start mt-10">
+  <div class="bg-white shadow-lg rounded-lg p-6 w-3/4 max-w-xl text-center">
+    <h1 class="text-green-500 flex justify-start ml-10 text-2xl">To-Do-List</h1>
+    <form class="mt-4 flex justify-center items-center">
+      <input type="text" placeholder="Enter item..." class="border outline-none border-blue-500 px-2 py-1 mr-2 rounded-lg">
+      <select class="border outline-none border-blue-500 px-2 py-1 mr-2 rounded-lg">
+        <option value="">Select category...</option>
+        <option value="Studies">Studies</option>
+        <option value="HouseWork">HouseWork</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Dairy">Dairy</option>
+      </select>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add</button>
+    </form>
+    <div class="mt-4">
+      <ul id="list-items" class="cursor-pointer">
+        <!-- List items will be added dynamically here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="main.js"></script>
+</body>
+</html>
